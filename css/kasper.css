@@ -901,11 +901,28 @@ header .toggle-menu{
     position: relative;
 }
 .subscribe .container form i{
-
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
 }
 .subscribe .container form input[type="email"] {
-
+    border: 1px solid white;
+    background: none;
+    padding: 20px 20px 20px 60px;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+    border-right: none;
 }
 .subscribe .container form input[type="submit"]{
+    width: 130px;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-left: none;
 
+}
+.subscribe form :placeholder{
+    color: white;
 }
