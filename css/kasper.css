@@ -923,6 +923,86 @@ header .toggle-menu{
     border-left: none;
 
 }
-.subscribe form :placeholder{
+.subscribe .container form input[type="email"]:focus,
+.subscribe .container form input[type="submit"]:focus{
+    outline: none;
+}
+.subscribe form ::placeholder{
     color: white;
+}
+.subscribe p{
+    line-height: 2;
+    margin-left: 50px;
+}
+@media(max-width:991px){
+    .subscribe p{
+        margin: 30px 0 0 ;
+        
+    }
+}
+
+/* Contact */
+.contact{
+    padding: var(--section-padding);
+}
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:767px){
+    .contact .content{
+        flex-direction: column;
+    }
+}
+.contact .content form{
+    flex-basis: 70%;
+}
+.contact .content form .main-input{
+    display: block;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+
+}
+.contact .content form textarea.main-input{
+    height: 200px;
+}
+.contact .content form .main-input:focus{
+    outline: var(--main-color) 2px solid ;
+    
+    
+    /* border: 1px solid var(--main-color); */
+}
+
+.contact .content form input[type="submit"]{
+    background: var(--main-color);
+    border: none;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+.contact .content .info{
+    flex-basis: 25%;
+}
+.contact .content .info h4{
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact .content .info .phone{
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.contact .content .info h4:nth-of-type(2){
+    margin-top: 90px;
+}
+.contact .content .info address{
+    color: #777;
+    line-height: 2;
 }
