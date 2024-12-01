@@ -988,6 +988,12 @@ header .toggle-menu{
 .contact .content .info{
     flex-basis: 25%;
 }
+@media(max-width:767px){
+    .contact .content .info{
+        order: -1;
+        text-align: center;
+    }
+}
 .contact .content .info h4{
     font-weight: 500;
     margin-bottom: 30px;
@@ -1002,7 +1008,60 @@ header .toggle-menu{
 .contact .content .info h4:nth-of-type(2){
     margin-top: 90px;
 }
+@media(max-width:767px){
+    .contact .content .info h4:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
 .contact .content .info address{
     color: #777;
     line-height: 2;
+}
+@media(max-width:767px){
+    .contact .content .info address{
+        margin-bottom: 40px;
+    }  
+}                                /* *******************Gib line code********************* */
+
+/* footer */
+.footer{
+    padding: 50px 0;
+    background-image: url('../images/subscribe.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+.footer img{
+    margin-bottom: 20px;
+}
+.footer .container{
+    position: relative;
+}
+.footer p:not(.copyright){
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 20px auto;
+}
+.footer .social-icon i{
+    padding: 10px 15px;
+}
+.footer .copyright{
+    margin-top: 60px;
+}
+.footer .copyright span{
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: uppercase;
 }
